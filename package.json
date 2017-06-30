@@ -15,7 +15,9 @@
     "dev-server": "webpack-dev-server --hot --env=dev --progress --colors --open",
     "webpack-build": "rimraf dist && webpack --env=prod --progress --colors",
     "test": "jest --coverage",
-    "test-watch": "jest --coverage --watchAll"
+    "test-watch": "jest --coverage --watchAll",
+    "docker-build": "docker-compose build",
+    "docker-up": "docker-compose up"
   },
   "devDependencies": {
     "@types/jest": "^20.0.2",

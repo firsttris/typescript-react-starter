@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FadeCard changes the class when hovered 1`] = `
+<li
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "float": "left",
+    }
+  }
+>
+  <a
+    href="/"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "color": "#222",
+        "display": "block",
+        "padding": "14px 16px",
+        "textAlign": "center",
+        "textDecoration": "none",
+      }
+    }
+  >
+    App
+  </a>
+</li>
+`;
+
+exports[`FadeCard changes the class when hovered 2`] = `
+<li
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "float": "left",
+    }
+  }
+>
+  <a
+    href="/"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "color": "#222",
+        "display": "block",
+        "padding": "14px 16px",
+        "textAlign": "center",
+        "textDecoration": "none",
+      }
+    }
+  >
+    App
+  </a>
+</li>
+`;
+
+exports[`FadeCard changes the class when hovered 3`] = `
+<li
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "float": "left",
+    }
+  }
+>
+  <a
+    href="/"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "color": "#222",
+        "display": "block",
+        "padding": "14px 16px",
+        "textAlign": "center",
+        "textDecoration": "none",
+      }
+    }
+  >
+    App
+  </a>
+</li>
+`;

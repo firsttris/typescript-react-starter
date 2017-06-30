@@ -1,0 +1,73 @@
+{
+  "name": "typescript-react",
+  "version": "1.0.0",
+  "description": "minimal typescript+react starter",
+  "author": "Tristan Teufel",
+  "homepage": "teufel-it.de",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firsttris/electron-typescript-react.git"
+  },
+  "license": "MIT",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev-server": "webpack-dev-server --hot --config=./webpack.dev.config.js",
+    "webpack-build": "webpack --config webpack.prod.config.js",
+    "test": "jest --coverage",
+    "test-watch": "jest --coverage --watchAll",
+    "electron-package": "electron-packager ./ --out=./builds --overwrite",
+    "package": "yarn webpack-build && yarn electron-package"
+  },
+  "devDependencies": {
+    "@types/jest": "^20.0.2",
+    "@types/lodash": "^4.14.66",
+    "@types/node": "^8.0.6",
+    "@types/react": "^15.0.31",
+    "@types/react-dom": "^15.5.1",
+    "@types/react-redux": "^4.4.45",
+    "@types/reactstrap": "^4.3.6",
+    "babili-webpack-plugin": "^0.1.2",
+    "bootstrap": "4.0.0-alpha.6",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "font-awesome": "^4.7.0",
+    "html-webpack-plugin": "^2.28.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "react-test-renderer": "^15.6.1",
+    "react-transition-group": "^1.2.0",
+    "reactstrap": "^4.6.2",
+    "redux": "^3.7.0",
+    "redux-thunk": "^2.2.0",
+    "style-loader": "^0.18.2",
+    "ts-jest": "^20.0.6",
+    "ts-loader": "^2.2.0",
+    "typescript": "^2.3.4",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.json"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "transform": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./jest/fileTransformer.js",
+      ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
+    }
+  }
+}

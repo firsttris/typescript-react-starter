@@ -1,9 +1,18 @@
-const webpackConfig = require('./webpack.config');
+const base = require('./webpack.base');
 const webpack = require('webpack');
 const BabiliPlugin = require('babili-webpack-plugin');
-const renderer = webpackConfig;
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-renderer.plugins.push(
+base.module.rules.push(
+    {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+            use: 'css-loader?minimize',
+            fallback: 'style-loader'
+        })
+    }
+);
+base.plugins.push(
     new webpack.optimize.CommonsChunkPlugin({
         name: "vendor",
         minChunks: function (module) {
@@ -15,7 +24,11 @@ renderer.plugins.push(
             return module.context && module.context.indexOf("node_modules") !== -1;
         }
     }),
-    new BabiliPlugin()
+    new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    new BabiliPlugin(),
+    new ExtractTextPlugin("styles.css")
 );
-
-module.exports = renderer;
+base.devtool = 'source-map';
+module.exports = base;

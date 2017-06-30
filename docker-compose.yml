@@ -1,8 +1,8 @@
 version: '3'
 services:
-  babel-node-starter:
-    container_name: babel-node-starter
-    image: babel-node-starter
+  typescript-react:
+    container_name: typescript-react
+    image: typescript-react
     command: sh docker-entrypoint.sh
     env_file:
       - docker-variables.env

@@ -1,4 +1,4 @@
-const base = require('./webpack.base');
+const base = require('./base');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 base.module.rules.push(

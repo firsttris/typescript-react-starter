@@ -1,4 +1,4 @@
-const base = require('./webpack.base');
+const base = require('./base');
 const webpack = require('webpack');
 const BabiliPlugin = require('babili-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');

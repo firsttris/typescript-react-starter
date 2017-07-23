@@ -1,10 +1,12 @@
 # Minimal Typescript + React Starter Kit
 
+[**Offical Microsoft Typescript React Guide**](https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter)
+
 - [**Typescript**](https://www.typescriptlang.org/) Javascript that scales (ES++ with types)
 - [**Jest**](https://facebook.github.io/jest/) for testing, mocking and coverage report
 - [**Webpack**](https://webpack.js.org/) module bundler
 
-## for styling
+## styling
 
 - [**reactstrap**](https://reactstrap.github.io/) bootstrap 4 components for react
 - [**bootstraps**](https://v4-alpha.getbootstrap.com/) bootstrap 4 css

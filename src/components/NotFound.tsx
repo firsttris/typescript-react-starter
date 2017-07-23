@@ -1,9 +1,10 @@
 import * as React from 'react';
+
 const {Link} = require('react-router-dom');
 const Unicorn = require('./../assets/images/NotFound/unicorn-small.png');
 const Lines = require('./../assets/images/backgrounds/lines.png');
 
-class NotFound extends React.Component<any, any> {
+export default class NotFound extends React.Component<{}, {}> {
     render() {
         return (
             <div style={{
@@ -20,8 +21,7 @@ class NotFound extends React.Component<any, any> {
                 <div>Page not found, try refreshing.</div>
                 <div>If the problem persists feel free to contact us.</div>
                 <div>
-                    <div className="spacer" style={{height: '80px'}}>
-                    </div>
+                    <div className="spacer" style={{height: '80px'}}/>
                     <div><b>Contact:</b></div>
                     <div><a href="https://www.teufel-it.de">www.teufel-it.de</a></div>
                     <div><a href="mailto:info@teufel-it.de">info@teufel-it.de</a></div>
@@ -32,5 +32,3 @@ class NotFound extends React.Component<any, any> {
         );
     }
 }
-
-export default NotFound;

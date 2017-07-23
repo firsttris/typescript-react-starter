@@ -12,8 +12,8 @@
   "main": "dist/main.js",
   "scripts": {
     "prod-server": "http-server dist",
-    "dev-server": "webpack-dev-server --hot --env=dev --progress --colors --open",
-    "webpack-build": "rimraf dist && webpack --env=prod --progress --colors",
+    "dev-server": "webpack-dev-server --hot --env=dev --colors --open",
+    "webpack-build": "rimraf dist && webpack --env=prod --colors",
     "test": "jest --coverage",
     "test-watch": "jest --coverage --watchAll",
     "tslint": "tslint -c tslint.json \"src/**/*.{ts,tsx}\"",

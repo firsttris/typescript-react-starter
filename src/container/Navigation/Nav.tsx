@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
-import LinkItem from './../../components/LinkItem'
+import LinkItem from './../../components/LinkItem';
 
 const fixedNavBarStyle = {
     width: '100%',
@@ -11,20 +11,19 @@ interface Props {
     user: {
         name: string,
         chipId: string
-    }
+    };
 }
 
 interface State {
-    linkitem: number
+    linkitem: number;
 }
-
 
 class Nav extends React.Component<any, State> {
     constructor() {
         super();
         this.state = {
             linkitem: 0
-        }
+        };
     }
 
     onClick(index: number, e: Event) {
@@ -61,12 +60,10 @@ class Nav extends React.Component<any, State> {
     }
 }
 
-
-
-function mapStateToProps(state:any) {
+function mapStateToProps(state: any) {
     return {
-        'user': state.currentUser
-    }
+        user: state.currentUser
+    };
 }
 
 export default connect(mapStateToProps)(Nav);

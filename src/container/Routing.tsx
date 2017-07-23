@@ -5,9 +5,9 @@ const {
     Switch
 } = require('react-router-dom');
 
-import Nav from './../container/Navigation/Nav'
-import NotFound from './../components/NotFound'
-import App from './../container/App'
+import NotFound from './../components/NotFound';
+import App from './../container/App';
+import Nav from './../container/Navigation/Nav';
 
 interface Props {
 }
@@ -16,7 +16,6 @@ interface State {
 }
 
 class Routing extends React.Component<Props, State> {
-
 
     render() {
         return (

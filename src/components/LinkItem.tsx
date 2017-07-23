@@ -2,13 +2,13 @@ import * as React from 'react';
 const {Link} = require('react-router-dom');
 
 interface Props {
-    focus:boolean,
-    path:string,
-    name:string
+    focus: boolean;
+    path: string;
+    name: string;
 }
 
 interface State {
-    hover:boolean
+    hover: boolean;
 }
 
 class LinkItem extends React.Component<Props, State> {
@@ -16,18 +16,18 @@ class LinkItem extends React.Component<Props, State> {
         super();
         this.state = {
             hover: false
-        }
+        };
     }
 
-    onMouseLeave():void {
+    onMouseLeave(): void {
         this.setState({hover: false});
     }
 
-    onMouseEnter():void {
+    onMouseEnter(): void {
         this.setState({hover: true});
     }
 
-    getLinkStyle():any {
+    getLinkStyle(): any {
         const linkStyle = {
             display: 'block',
             color: 'white',

@@ -1,18 +1,16 @@
-export default function currentUser(state:any = {}, action:any) {
+export default function currentUser(state: any = {}, action: any) {
     switch (action.type) {
         case 'message/status':
             return {...state, status: action.data};
         case 'message/chipId':
-            return Object.assign({}, state, {chipId: action.data});
+            return {...state, chipId: action.data};
         case 'currentUser/resetCurrentUserChipId':
-            return Object.assign({}, state, {chipId: ''});
+            return {...state, chipId: ''};
         case 'currentUser/resetCurrentUser':
             return {};
         case 'currentUser/saveCurrentUser':
-            return Object.assign({}, state, action.data);
+            return {...state, ...action.data};
         default:
             return state;
     }
-};
-
-
+}
